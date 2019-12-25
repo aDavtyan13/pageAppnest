@@ -1,0 +1,76 @@
+.search{
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 5px;
+    position: relative;
+    margin-top: 73px;
+    & i{
+        right: 0;
+        background-color: #24c657;
+        border-radius: 0 5px 5px 0;
+        font-size: 19px;
+        padding: 21px;
+        position: absolute;
+        cursor: pointer;
+    }
+    &_input{
+        font-size: 15px;
+        color:  rgb(164, 164, 164);
+        line-height: 3.2;
+        padding: 6px 23px;
+        border: none;
+        width: 100%;
+    }
+}
+
+.categories{
+    &_header{
+        font-size: 24px;
+        color: rgb(87, 87, 87);
+        font-weight: bold;
+        padding: 75px 0 25px;
+    }
+    &_items{
+        font-size: 18px;
+        line-height: 2.667;
+        padding-bottom: 30px;
+        li{
+            position: relative;
+            line-height: 2.1;
+        }
+        span{
+            position: absolute;
+            right: 0%;
+        }
+    }
+}
+.recent_posts{
+    display: flex;
+    margin-bottom: 30px;
+    & p{
+        font-size: 18px;
+        color: rgb(71, 71, 71);
+        font-weight: bold;
+        line-height: 1.667;
+    }
+    & > div{
+        padding: 0;
+    }
+}
+.recentposts_header{
+        font-size: 24px;
+        color: rgb(87, 87, 87);
+        font-weight: bold;
+        padding: 30px 0 40px;
+}
+.tags a{
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    border: 1px solid rgb(208,208,208);
+    padding: 3px 8px;
+    margin-right: 5px;
+     
+}
+.first_line_tags{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+.post{
+    padding-top: 77px;
+    &_section{
+        padding: 140px 0;
+    }
+    &_header {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    &_paragraph{
+        padding-top: 30px;
+        padding-top: 25px;
+        font-size: 15px;
+        font-family: "Raleway";
+        color: rgb(69, 69, 69);
+    }
+    &_date{
+        padding-top: 19px;
+    }
+    &_date span{
+        font-weight: bold;
+    }
+    &_texts {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+    }
+    &_container{
+        padding: 38px 12px;
+    }
+    &_content{
+        padding: 67px 0 58px;
+    }
+    &_elements{
+        padding-bottom: 82px;
+        img{
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+.read_more{
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 15px;
+  & i{
+        padding-left: 5px;
+    }
+}
