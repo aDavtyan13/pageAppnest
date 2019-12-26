@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap');
 @font-face {
     font-family: 'appnest';
     src:  url('../fonts/appnest.eot?2ys57g');
@@ -148,7 +148,7 @@ p{
     }
     &_image{
         text-align: center;
-        & img{
+        img{
             max-height: 100%;
             max-width: 100%;
         }
@@ -284,6 +284,10 @@ p{
     }
     &_overlay{
         position: relative;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+        &_with_shadow{
+            box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05);
+        }
     }
     &_header{
         &_content{
@@ -395,7 +399,8 @@ p{
             font-size: 18px;
             font-family: "Raleway",sans-serif;
             color: rgb(87, 87, 87);
-            line-height: 2.267;          
+            line-height: 2.267;      
+            font-weight: 500;    
         }
     } 
 }
@@ -426,6 +431,9 @@ p{
     &_section_paragraph{
         padding-top: 20px;
     }
+}
+.news{
+    padding-top: 73px;
 }
 .news_section {
     padding: 140px 0; 
@@ -530,6 +538,7 @@ p{
     .search i{
         font-size: 10px;
         padding: 13px;
+        right: -1;
     }
 }
 @media(max-width: 991px){

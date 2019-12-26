@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
 .color--blue {
   color: #00cff1; }
 
@@ -63,7 +63,7 @@ button {
 
 .standard_buttons {
   display: flex;
-  padding-top: 60px; }
+  padding-top: 50px; }
 
 .fill_button {
   border-radius: 7px;
@@ -80,6 +80,7 @@ button {
     font-size: 9px;
     line-height: 0.889;
     display: inline-block;
+    text-align: left;
     margin: 0; }
     .fill_button_text span {
       font-size: 16px;
@@ -103,6 +104,7 @@ button {
     font-size: 9px;
     line-height: 0.889;
     display: inline-block;
+    text-align: left;
     margin: 0; }
     .stroke_button_text span {
       font-size: 16px;
@@ -184,8 +186,7 @@ button {
     font-weight: bold; }
   .post_texts {
     background-color: white;
-    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
-    width: 100%; }
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1); }
   .post_container {
     padding: 38px 12px; }
   .post_content {
@@ -447,7 +448,7 @@ footer {
   font-size: 24px;
   color: #575757;
   font-weight: bold;
-  padding-bottom: 15px; }
+  padding-bottom: 55px; }
 
 .footer_items {
   font-size: 15px;
@@ -461,7 +462,7 @@ footer {
 
 .footer_email input {
   position: relative;
-  padding: 16px 35px;
+  padding: 16px 25px;
   border: 1px solid #d8d8d8;
   border-radius: 30px 0 0 30px; }
 
@@ -470,8 +471,11 @@ footer {
   position: absolute;
   border-radius: 0 30px 30px 0; }
 
-.newsletter_text {
-  padding-top: 35px; }
+.footer_follow {
+  font-size: 24px;
+  color: #575757;
+  font-weight: bold;
+  padding-bottom: 20px; }
 
 .logo_and_links {
   padding-top: 7px; }
@@ -510,7 +514,7 @@ footer {
   .arrow_top:hover {
     cursor: pointer; }
   .arrow_top i {
-    font-size: 37px; }
+    font-size: 18px; }
 
 .relative {
   position: relative; }
@@ -658,8 +662,8 @@ p {
 .header_image {
   text-align: center; }
   .header_image img {
-    max-height: 60%;
-    max-width: 60%; }
+    max-height: 100%;
+    max-width: 100%; }
 
 .header_text p {
   font-size: 48px;
@@ -671,10 +675,14 @@ p {
 .header_paragraph p {
   font-size: 18px;
   line-height: 1.667;
-  padding: 40px 0 5px; }
+  padding: 30px 0 5px; }
+
+.light_span_blue {
+  font-weight: 300; }
 
 .light_span {
-  font-weight: 100; }
+  font-weight: 300;
+  font-size: 36px; }
 
 .info_section {
   margin-top: 23px;
@@ -720,7 +728,7 @@ p {
   transform: translate(-50%, -50%); }
 
 .feature_section_phones {
-  padding: 141px 0; }
+  padding: 141px 15px; }
   .feature_section_phones img {
     max-height: 100%;
     max-width: 100%; }
@@ -729,14 +737,14 @@ p {
   font-size: 18px;
   color: #414040;
   font-weight: bold;
-  line-height: 0.444;
-  padding: 40px 0 22px; }
+  line-height: 1;
+  padding: 35px 0 22px; }
 
 .feature_element {
-  padding-bottom: 70px; }
+  padding: 0 0 70px; }
 
 .feature_section_elements i {
-  font-size: 43px; }
+  font-size: 37px; }
 
 .features_heading {
   padding-top: 140px; }
@@ -775,7 +783,10 @@ p {
     max-height: 100%;
     max-width: 100%; }
   .screenshots_overlay {
-    position: relative; }
+    position: relative;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
+    .screenshots_overlay_with_shadow {
+      box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
   .screenshots_header_content {
     padding-bottom: 80px; }
   .screenshots_header_paragraph {
@@ -792,7 +803,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%); }
     .green_section_icon i {
-      font-size: 50px; }
+      font-size: 60px; }
     .green_section_icon_header {
       padding-top: 10px;
       font-size: 48px;
@@ -807,8 +818,8 @@ p {
 
 .horizontal_line {
   position: absolute;
-  top: 50%;
-  left: 86%;
+  top: 48%;
+  left: 85%;
   width: 28%;
   border-top: 1px solid white; }
 
@@ -821,6 +832,8 @@ p {
     .feedback_list_item {
       box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
       padding: 47px 27px; }
+      .feedback_list_item_with_shadow {
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
     .feedback_list_name {
       font-size: 24px;
       font-weight: bold;
@@ -858,12 +871,15 @@ p {
 .price_table_elements {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   padding: 79px 15px 74px; }
+  .price_table_elements_with_shadow {
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
 
 .price_table_description {
   font-size: 18px;
   font-family: "Raleway",sans-serif;
   color: #575757;
-  line-height: 2.267; }
+  line-height: 2.267;
+  font-weight: 500; }
 
 .advertisement {
   background-image: url(/app/images/advertisement_background.png) no-repeat center;
@@ -891,6 +907,9 @@ p {
 .ad_section_paragraph {
   padding-top: 20px; }
 
+.news {
+  padding-top: 73px; }
+
 .news_section {
   padding: 140px 0; }
 
@@ -916,8 +935,12 @@ p {
   max-height: 100%; }
 
 .news_texts {
-  background-color: white;
-  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1); }
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
+
+.news_texts_with_shadow {
+  background-color: #fff;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
 
 .news_content {
   padding: 38px 28px; }
@@ -973,7 +996,8 @@ p {
     padding: 2px 2px; }
   .search i {
     font-size: 10px;
-    padding: 13px; } }
+    padding: 13px;
+    right: -1; } }
 
 @media (max-width: 991px) {
   .ad_images {
