@@ -9,7 +9,7 @@ button {
 }
 .standard_buttons{
     display: flex;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 .fill_button{
     border-radius: 7px;
@@ -28,6 +28,7 @@ button {
         font-size: 9px;
         line-height: 0.889;
         display: inline-block;
+        text-align: left;
         margin: 0;
         span{
             font-size: 16px;
@@ -56,6 +57,7 @@ button {
         font-size: 9px;
         line-height: 0.889;
         display: inline-block;
+        text-align: left;
         margin: 0;
         span{
             font-size: 16px;

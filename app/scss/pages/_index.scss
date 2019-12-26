@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @font-face {
     font-family: 'appnest';
@@ -149,8 +149,8 @@ p{
     &_image{
         text-align: center;
         & img{
-            max-height: 60%;
-            max-width: 60%;
+            max-height: 100%;
+            max-width: 100%;
         }
     }
     &_text p{
@@ -163,11 +163,15 @@ p{
     &_paragraph p{
         font-size: 18px;
         line-height: 1.667;
-        padding: 40px 0 5px;
+        padding: 30px 0 5px;
     }
 }
+.light_span_blue{
+    font-weight: 300;
+}
 .light_span{
-    font-weight: 100;
+    font-weight: 300;
+    font-size: 36px;
 }
 .info{
     &_section{
@@ -216,7 +220,7 @@ p{
 }
 .feature{
     &_section_phones{
-        padding: 141px 0;
+        padding: 141px 15px;
         img{
             max-height: 100%;
             max-width: 100%;
@@ -226,14 +230,14 @@ p{
         font-size: 18px;
         color: #414040;
         font-weight: bold;
-        line-height: 0.444;
-        padding: 40px 0 22px;
+        line-height: 1;
+        padding: 35px 0 22px;
     }
     &_element{
-        padding-bottom: 70px;
+        padding: 0 0 70px;
     }
     &_section_elements i{
-        font-size: 43px;
+        font-size: 37px;
     }
 }
 .features_heading {
@@ -302,7 +306,7 @@ p{
         left: 50%;
         transform: translate(-50%,-50%);
         i{
-            font-size: 50px;   
+            font-size: 60px;   
         }
         &_header{
             padding-top: 10px;
@@ -321,8 +325,8 @@ p{
 }
 .horizontal_line{
     position: absolute;
-    top: 50%;
-    left: 86%;
+    top: 48%;
+    left: 85%;
     width: 28%;
     border-top: 1px solid white;
 }
@@ -334,8 +338,11 @@ p{
     &_list{
         padding-top: 73px;
         &_item{
-            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);   
+            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);  
             padding: 47px 27px;
+            &_with_shadow{
+                box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05);
+            }
         }
         &_name{
             font-size: 24px;
@@ -380,6 +387,9 @@ p{
         &_elements{
             box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
             padding: 79px 15px 74px;
+            &_with_shadow{
+                box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05);
+            }
         }
         &_description{
             font-size: 18px;
@@ -438,8 +448,12 @@ p{
     width: 100%;
     max-height: 100%; }
 .news_texts{
-    background-color: white;
-    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.news_texts_with_shadow{
+  background-color: #fff;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05);
 }
 .news_content{
     padding: 38px 28px; 
