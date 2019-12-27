@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap");
+>>>>>>> 963823900b5fe1af31abb2cc9caa7c36fdcab9c0
 .color--blue {
   color: #00cff1; }
 
@@ -186,9 +191,13 @@ button {
     font-weight: bold; }
   .post_texts {
     background-color: white;
+<<<<<<< HEAD
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
     .post_texts_with_shadow {
       box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
+=======
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1); }
+>>>>>>> 963823900b5fe1af31abb2cc9caa7c36fdcab9c0
   .post_container {
     padding: 38px 12px; }
   .post_content {
@@ -786,7 +795,10 @@ p {
     max-height: 100%;
     max-width: 100%; }
   .screenshots_overlay {
-    position: relative; }
+    position: relative;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
+    .screenshots_overlay_with_shadow {
+      box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
   .screenshots_header_content {
     padding-bottom: 80px; }
   .screenshots_header_paragraph {
@@ -879,7 +891,8 @@ p {
   font-size: 18px;
   font-family: "Raleway",sans-serif;
   color: #575757;
-  line-height: 2.267; }
+  line-height: 2.267;
+  font-weight: 500; }
 
 .advertisement {
   background-image: url(/app/images/advertisement_background.png) no-repeat center;
@@ -996,7 +1009,8 @@ p {
     padding: 2px 2px; }
   .search i {
     font-size: 10px;
-    padding: 13px; } }
+    padding: 13px;
+    right: -1; } }
 
 @media (max-width: 991px) {
   .ad_images {
