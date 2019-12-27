@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @font-face {
     font-family: 'appnest';
@@ -103,6 +103,9 @@
 }
 .border--white{
     border: 1px solid white;
+}
+.border--tags{
+    border: 1px solid #d0d0d0;
 }
 *:focus {
     outline: none;
@@ -323,7 +326,8 @@ p{
 .green_section_content img{
     max-width: 100%;
 }
-.horizontal_line{
+.green_section_content:not(:last-child)::after{
+    content: '';
     position: absolute;
     top: 48%;
     left: 85%;
@@ -426,6 +430,9 @@ p{
     &_section_paragraph{
         padding-top: 20px;
     }
+}
+.news{
+    padding-top: 73px;
 }
 .news_section {
     padding: 140px 0; 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 .color--blue {
   color: #00cff1; }
@@ -63,7 +63,7 @@ button {
 
 .standard_buttons {
   display: flex;
-  padding-top: 60px; }
+  padding-top: 50px; }
 
 .fill_button {
   border-radius: 7px;
@@ -80,6 +80,7 @@ button {
     font-size: 9px;
     line-height: 0.889;
     display: inline-block;
+    text-align: left;
     margin: 0; }
     .fill_button_text span {
       font-size: 16px;
@@ -103,6 +104,7 @@ button {
     font-size: 9px;
     line-height: 0.889;
     display: inline-block;
+    text-align: left;
     margin: 0; }
     .stroke_button_text span {
       font-size: 16px;
@@ -140,7 +142,7 @@ button {
   border-radius: 30px;
   padding: 18px 55px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 140px; }
 
 .overlay_blue {
@@ -184,8 +186,9 @@ button {
     font-weight: bold; }
   .post_texts {
     background-color: white;
-    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
-    width: 100%; }
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
+    .post_texts_with_shadow {
+      box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
   .post_container {
     padding: 38px 12px; }
   .post_content {
@@ -204,8 +207,6 @@ button {
     padding-left: 5px; }
 
 .search {
-  border: 1px solid #d0d0d0;
-  border-radius: 5px;
   position: relative;
   margin-top: 73px; }
   .search i {
@@ -222,7 +223,9 @@ button {
     line-height: 3.2;
     padding: 6px 23px;
     border: none;
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px; }
 
 .categories_header {
   font-size: 24px;
@@ -262,9 +265,8 @@ button {
   font-size: 15px;
   line-height: 2;
   text-align: center;
-  border: 1px solid #d0d0d0;
-  padding: 3px 8px;
-  margin-right: 5px; }
+  padding: 0px 13px;
+  margin-right: 6px; }
 
 .first_line_tags {
   margin-bottom: 10px; }
@@ -352,12 +354,13 @@ button {
   line-height: 1.5em;
   font-family: "Raleway";
   color: #575757;
-  padding: 30px 0 15px; }
+  padding: 26px 0 15px; }
   .comment_content {
     padding-top: 72px; }
     .comment_content a {
       font-size: 15px;
-      line-height: 2; }
+      line-height: 2;
+      font-weight: bold; }
   .comment_image {
     height: 70px;
     width: 70px; }
@@ -366,7 +369,7 @@ button {
       width: 100%; }
   .comment_data {
     width: calc(100% - 70px);
-    margin-left: 15px; }
+    margin-left: 30px; }
   .comment p {
     font-size: 15px;
     line-height: 1.5em;
@@ -374,13 +377,11 @@ button {
     color: #575757; }
   .comment_name {
     font-size: 18px;
-    line-height: 3em;
     font-weight: bold;
     color: #474747; }
   .comment_date {
     font-size: 15px;
-    line-height: 3;
-    color: #575757; }
+    padding-top: 3px; }
 
 .name {
   padding-left: 0; }
@@ -447,7 +448,7 @@ footer {
   font-size: 24px;
   color: #575757;
   font-weight: bold;
-  padding-bottom: 15px; }
+  padding-bottom: 55px; }
 
 .footer_items {
   font-size: 15px;
@@ -461,7 +462,7 @@ footer {
 
 .footer_email input {
   position: relative;
-  padding: 16px 35px;
+  padding: 16px 25px;
   border: 1px solid #d8d8d8;
   border-radius: 30px 0 0 30px; }
 
@@ -470,8 +471,11 @@ footer {
   position: absolute;
   border-radius: 0 30px 30px 0; }
 
-.newsletter_text {
-  padding-top: 35px; }
+.footer_follow {
+  font-size: 24px;
+  color: #575757;
+  font-weight: bold;
+  padding-bottom: 20px; }
 
 .logo_and_links {
   padding-top: 7px; }
@@ -510,7 +514,7 @@ footer {
   .arrow_top:hover {
     cursor: pointer; }
   .arrow_top i {
-    font-size: 37px; }
+    font-size: 18px; }
 
 .relative {
   position: relative; }
@@ -614,6 +618,9 @@ footer {
 .border--white {
   border: 1px solid white; }
 
+.border--tags {
+  border: 1px solid #d0d0d0; }
+
 *:focus {
   outline: none; }
 
@@ -658,8 +665,8 @@ p {
 .header_image {
   text-align: center; }
   .header_image img {
-    max-height: 60%;
-    max-width: 60%; }
+    max-height: 100%;
+    max-width: 100%; }
 
 .header_text p {
   font-size: 48px;
@@ -671,10 +678,14 @@ p {
 .header_paragraph p {
   font-size: 18px;
   line-height: 1.667;
-  padding: 40px 0 5px; }
+  padding: 30px 0 5px; }
+
+.light_span_blue {
+  font-weight: 300; }
 
 .light_span {
-  font-weight: 100; }
+  font-weight: 300;
+  font-size: 36px; }
 
 .info_section {
   margin-top: 23px;
@@ -720,7 +731,7 @@ p {
   transform: translate(-50%, -50%); }
 
 .feature_section_phones {
-  padding: 141px 0; }
+  padding: 141px 15px; }
   .feature_section_phones img {
     max-height: 100%;
     max-width: 100%; }
@@ -729,14 +740,14 @@ p {
   font-size: 18px;
   color: #414040;
   font-weight: bold;
-  line-height: 0.444;
-  padding: 40px 0 22px; }
+  line-height: 1;
+  padding: 35px 0 22px; }
 
 .feature_element {
-  padding-bottom: 70px; }
+  padding: 0 0 70px; }
 
 .feature_section_elements i {
-  font-size: 43px; }
+  font-size: 37px; }
 
 .features_heading {
   padding-top: 140px; }
@@ -792,7 +803,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%); }
     .green_section_icon i {
-      font-size: 50px; }
+      font-size: 60px; }
     .green_section_icon_header {
       padding-top: 10px;
       font-size: 48px;
@@ -805,10 +816,11 @@ p {
 .green_section_content img {
   max-width: 100%; }
 
-.horizontal_line {
+.green_section_content:not(:last-child)::after {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 86%;
+  top: 48%;
+  left: 85%;
   width: 28%;
   border-top: 1px solid white; }
 
@@ -821,6 +833,8 @@ p {
     .feedback_list_item {
       box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
       padding: 47px 27px; }
+      .feedback_list_item_with_shadow {
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
     .feedback_list_name {
       font-size: 24px;
       font-weight: bold;
@@ -858,6 +872,8 @@ p {
 .price_table_elements {
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   padding: 79px 15px 74px; }
+  .price_table_elements_with_shadow {
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
 
 .price_table_description {
   font-size: 18px;
@@ -891,6 +907,9 @@ p {
 .ad_section_paragraph {
   padding-top: 20px; }
 
+.news {
+  padding-top: 73px; }
+
 .news_section {
   padding: 140px 0; }
 
@@ -916,8 +935,12 @@ p {
   max-height: 100%; }
 
 .news_texts {
-  background-color: white;
-  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1); }
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); }
+
+.news_texts_with_shadow {
+  background-color: #fff;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.05); }
 
 .news_content {
   padding: 38px 28px; }

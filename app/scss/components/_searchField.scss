@@ -1,6 +1,4 @@
 .search{
-    border: 1px solid rgb(208, 208, 208);
-    border-radius: 5px;
     position: relative;
     margin-top: 73px;
     & i{
@@ -19,6 +17,8 @@
         padding: 6px 23px;
         border: none;
         width: 100%;
+        border: 1px solid rgb(208, 208, 208);
+        border-radius: 5px;
     }
 }
 
@@ -66,10 +66,8 @@
     font-size: 15px;
     line-height: 2;
     text-align: center;
-    border: 1px solid rgb(208,208,208);
-    padding: 3px 8px;
-    margin-right: 5px;
-     
+    padding: 0px 13px;
+    margin-right: 6px;
 }
 .first_line_tags{
     margin-bottom: 10px;
