@@ -146,7 +146,7 @@ p{
 }
 .header{
     &_content{
-        height: calc(100vh - 116px);
+        min-height: calc(100vh - 116px);
         align-items: center;
     }
     &_image{
@@ -160,7 +160,7 @@ p{
         font-size: 48px;
         font-weight: bold;
         text-transform: uppercase;
-        line-height: 1.25;   
+        line-height: 1;   
         color: #fff;     
     }
     &_paragraph p{
@@ -268,7 +268,10 @@ p{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
+        z-index: 15;
+        width: 72px;
+        height: 72px;
     }
     &_left_side{
         padding: 130px 0;
@@ -276,8 +279,14 @@ p{
 }
 .play_button_shadow{
     border-radius: 50%;
-    background-color: rgb(0, 207, 241);
+    background-color: #00cff1;
     opacity: 0.2;
+    width: calc(100% + 46px);
+    height: calc(100% + 46px);
+    position: absolute;
+    top: -23px;
+    left: -23px;
+    z-index: -1;
 }
 .screenshots {
     padding: 140px 0;
@@ -419,18 +428,18 @@ p{
         display: block;
     }
     &_images{
-        position: absolute;
-        top: 14%;
-        right: 0%;
+        position: relative;
     }
     &_first_image{
         position: absolute;
         z-index: 2;
+        transform: translateY(-75px);
     }
     &_second_image{
         position: absolute;
         z-index: 1;
-        transform: translate(50%, 18%);
+        right: 0;
+        transform: translateY(5px);
     }
     &_section_paragraph{
         padding-top: 20px;
@@ -522,18 +531,20 @@ p{
     .ad_images{
         top: 30%;
         & img{
-            width: 50%;
+            width: 80%;
         }
+    }
+    .ad_first_image{
+        transform: translateY(-35px);
+    }
+    .ad_second_image{
+        transform: translateY(29px);
     }
     .logo{
         margin-right: 150px;
     }
     .navbar_items{
         margin-right: 50px;
-    }
-    .recent_posts p{
-        font-size: 14px;
-        padding-left: 10px;
     }
     .search_input{
         font-size: 10px;
@@ -637,9 +648,6 @@ p{
     }
     .name_and_email>div{
         margin-bottom: 15px;
-    }
-    .first_line_tags,.second_line_tags{
-        display: inline;
     }
     .sidebar_header{
         text-align: center;
