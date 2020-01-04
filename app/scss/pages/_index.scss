@@ -253,6 +253,11 @@ p{
     position: relative;
     padding: 0;
     display: flex;
+    width: 45%;
+    margin-left: 116px;
+    &_left{
+        width: 45%;
+    }
     &_section{
         padding: 0 15px;
         background-color: #fbfbfb;
@@ -274,7 +279,7 @@ p{
         height: 72px;
     }
     &_left_side{
-        padding: 130px 0;
+        padding: 130px 15px;
     }
 }
 .play_button_shadow{
@@ -309,6 +314,11 @@ p{
             padding-top: 30px;
         }
     }
+}
+.slider_indicator li{
+    width: 40px;
+    height: 7px;
+    border-radius: 10px;
 }
 .green_section{
     background: url(/app/images/green_section_background.png) no-repeat center;
@@ -354,6 +364,8 @@ p{
     }
     &_list{
         padding-top: 73px;
+        padding-bottom: 68px;
+        margin-bottom: 26px;
         &_item{
             box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);  
             padding: 47px 27px;
@@ -416,6 +428,22 @@ p{
             font-weight: 500;    
         }
     } 
+}
+.nav-tabs{
+    border: none;
+    justify-content: center;
+}
+.first_indicator{
+    margin-bottom: -50px;
+}
+.slider_indicator li{
+    background-color: #ebe9ff;
+    cursor: pointer;
+}
+.slider_indicator .active{
+    background-color: #00cff1;
+    width: 60px;
+    height: 7px;
 }
 .advertisement{
     background-image: url(/app/images/advertisement_background.png) no-repeat center;
@@ -560,6 +588,9 @@ p{
     .ad_images{
         display: none;
     }
+    .green_section_content::after{
+        display: none;
+    }
     .ad_second_image {
         transform: translate(24%, 18%);
     }
@@ -608,6 +639,15 @@ p{
     .name_and_email>div{
         margin-bottom: 15px;
         padding: 0;
+    }
+    .video{
+        display: none;
+    }
+    .video_left{
+        width: 100%;
+    }
+    .video_left_side{
+        padding: 30px 0;
     }
 }
 @media(max-width:767px){

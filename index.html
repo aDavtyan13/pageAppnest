@@ -161,23 +161,25 @@
         </div>
     </section>
     <section class="video_section">
-        <div class="row">
-            <div class="col-lg-4 col-md-5 offset-lg-2 offset-md-1 offset-sm-1 offset-0 video_left_side">
-                <p class="video_section_header text-capitalize poppins--font header">app overview for easy <span class="color--blue">understanding</span></p>
-                <p class="video_section_paragraph paragraph color--paragraph">It is a long established fact that a reader will be distracted its by the readable content of a page when at its layout. 
-                    As opposed it conten making it look like readable English.</p>
-                <div class="standard_buttons">
-                    <button class="fill_button background_color--green">
-                        <i class="app-apple color--white"></i>
-                        <p class="fill_button_text color--white poppins--font text-uppercase">download from <span>apple store</span></p>
-                    </button>
-                    <button class="stroke_button border--black">
-                        <i class="app-playstore color--black"></i>
-                        <p class="stroke_button_text color--black poppins--font text-uppercase">download from <span>play store</span></p>
-                    </button>
+        <div class="d-flex">
+            <div class="container video_left">
+                <div class="video_left_side">
+                    <p class="video_section_header text-capitalize poppins--font header">app overview for easy <span class="color--blue">understanding</span></p>
+                    <p class="video_section_paragraph paragraph color--paragraph">It is a long established fact that a reader will be distracted its by the readable content of a page when at its layout. 
+                        As opposed it conten making it look like readable English.</p>
+                    <div class="standard_buttons">
+                        <button class="fill_button background_color--green">
+                            <i class="app-apple color--white"></i>
+                            <p class="fill_button_text color--white poppins--font text-uppercase">download from <span>apple store</span></p>
+                        </button>
+                        <button class="stroke_button border--black">
+                            <i class="app-playstore color--black"></i>
+                            <p class="stroke_button_text color--black poppins--font text-uppercase">download from <span>play store</span></p>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 video">
+            <div class="video">
                 <img src="/app/images/video_image.png" alt="">
                 <div class="video_play_button">
                     <img src="/app/images/video_play.png" alt="">
@@ -193,22 +195,67 @@
                 <p class="col-lg-6 offset-lg-3 screenshots_header_paragraph paragraph color--paragraph">It is a long established fact that a reader will be distracted its by the 
                     readable content of a page when at its layout</p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-12 screen_img">
-                    <img src="/app/images/screenshot1.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
-                        <img src="/app/images/screenshot2.png" alt="">
-                        <div class="overlay_blue"></div>
+            <div class="row carousel slide" id="carouselExampleIndicatorsOne" data-ride="carousel">
+                <ol class="carousel-indicators  first_indicator  slider_indicator">
+                    <li data-target="#carouselExampleIndicatorsOne" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicatorsOne" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicatorsOne" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex">    
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/screenshot1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
+                                    <img src="/app/images/screenshot2.png" alt="">
+                                    <div class="overlay_blue"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/screenshot3.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 screen_img">
-                    <img src="/app/images/screenshot3.png" alt="">
+                    <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
+                                    <img src="/app/images/ad_image2.png" alt="">
+                                    <div class="overlay_blue"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex">    
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image2.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
+                                    <img src="/app/images/ad_image1.png" alt="">
+                                    <div class="overlay_blue"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section class="green_section">
         <div class="overlay_green--narrow">
             <div class="container">
@@ -256,7 +303,98 @@
                 <p class="col-lg-6 offset-lg-3 feedback_paragraph paragraph color--paragraph">It is a long established fact that a reader will be distracted its by the 
                         readable content of a page when at its layout</p>
             </div>
-            <div class="feedback_list d-flex flex-wrap">
+            <div class="row carousel slide" id="carouselExampleIndicatorsTwo" data-ride="carousel">
+                <ol class="carousel-indicators slider_indicator">
+                    <li data-target="#carouselExampleIndicatorsTwo" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicatorsTwo" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicatorsTwo" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner feedback_list d-flex flex-wrap">
+                    <div class="carousel-item active">
+                        <div class="d-flex">                        
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="feedback_list_item text-center"> 
+                                    <img src="/app/images/feedback1.png" alt="">                        
+                                    <p class="feedback_list_name color--blue poppins--font">Robert Colin</p>
+                                    <p class="feedback_list_job poppins--font">Repto inc</p>
+                                    <p class="feedback_list_description">Lorem Ipsum is simply dummy teix of the printing and typesetting ind Lorem has book.</p>
+                                    <ul class="d-flex text-center justify-content-center">
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="feedback_list_item feedback_list_item_with_shadow text-center">
+                                    <img src="/app/images/feedback2.png" alt="">
+                                    <p class="feedback_list_name color--green poppins--font">Harry Cane</p>
+                                    <p class="feedback_list_job poppins--font">Microsoft</p>
+                                    <p class="feedback_list_description">Lorem Ipsum is simply dummy teix of the printing and typesetting ind Lorem has book.</p>
+                                    <ul class="d-flex text-center justify-content-center">
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                            <div class="feedback_list_item text-center">
+                                    <img src="/app/images/feedback3.png" alt="">
+                                    <p class="feedback_list_name color--blue poppins--font">SIlve Adams</p>
+                                    <p class="feedback_list_job poppins--font">Quarke inc</p>
+                                    <p class="feedback_list_description">Lorem Ipsum is simply dummy teix of the printing and typesetting ind Lorem has book.</p>
+                                    <ul class="d-flex text-center justify-content-center">
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                        <li><i class="app-star color--yellow"></i></li>
+                                    </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
+                                    <img src="/app/images/ad_image2.png" alt="">
+                                    <div class="overlay_blue"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex">    
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image2.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="screenshots_overlay screenshots_overlay_with_shadow screen_img">
+                                    <img src="/app/images/ad_image1.png" alt="">
+                                    <div class="overlay_blue"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 screen_img">
+                                <img src="/app/images/ad_image1.png" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="feedback_list d-flex flex-wrap">
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="feedback_list_item text-center"> 
                         <img src="/app/images/feedback1.png" alt="">                        
@@ -301,7 +439,7 @@
                             <li><i class="app-star color--yellow"></i></li>
                         </ul>
                    </div>
-                </div>
+                </div> -->
             </div>
     </section>
     <section class="price">
@@ -312,7 +450,9 @@
                     readable content of a page when at its layout</p>
             </div>
            
-            <div class="d-flex justify-content-center fill_buttons poppins--font">
+
+            <!--
+                            <div class="d-flex justify-content-center fill_buttons poppins--font">
                 <button class="fill_buttons_month background_color--green text-center color--white">
                     Month
                 </button>
@@ -320,57 +460,125 @@
                     Year
                 </button>    
             </div>
-            <div class="price_table d-flex text-center flex-wrap">
-                <div class="col-lg-4 col-md-4 col-12">  
-                    <div class="price_table_elements">
-                        <p class="price_name poppins--font text-capitalize">starter</p>
-                        <p class="price_price poppins--font color--blue">$50</p>
-                        <p class="price_month poppins--font text-capitalize">monthly</p>
-                        <ul class="price_table_description">
-                            <li>10 GB file storage</li>
-                            <li>10 Workspaces</li>
-                            <li>Enhanced Security</li>
-                            <li>20 Projects per month</li>
-                            <li>Premium support</li>
-                        </ul>
-                        <div class="fill_sign_up_button">
-                            <button class="color--white background_color--blue text-uppercase">sign up now</button>
+             -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item fill_buttons poppins--font">
+                    <a class="active fill_buttons_month background_color--green text-center color--white" id="monthly-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Month</a>
+                </li>
+                <li class="nav-item fill_buttons poppins--font">
+                    <a class="fill_buttons_year background_color--white text-center" id="yearly-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Year</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="monthly-tab">
+                    <div class="price_table d-flex text-center flex-wrap">
+                        <div class="col-lg-4 col-md-4 col-12">  
+                            <div class="price_table_elements">
+                                <p class="price_name poppins--font text-capitalize">starter</p>
+                                <p class="price_price poppins--font color--blue">$50</p>
+                                <p class="price_month poppins--font text-capitalize">monthly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button">
+                                    <button class="color--white background_color--blue text-uppercase">sign up now</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-lg-4 col-md-4 col-12">  
+                            <div class="price_table_elements price_table_elements_with_shadow">
+                                <p class="price_name poppins--font text-capitalize">professional</p>
+                                <p class="price_price poppins--font color--blue">$150</p>
+                                <p class="price_month poppins--font text-capitalize">monthly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button poppins--font">
+                                    <button class="color--white background_color--green text-uppercase">sign up now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="price_table_elements">
+                                <p class="price_name poppins--font text-capitalize">perimum</p>
+                                <p class="price_price poppins--font color--blue">$250</p>
+                                <p class="price_month poppins--font text-capitalize">monthly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button">
+                                    <button class="color--white background_color--blue text-uppercase">sign up now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">  
-                    <div class="price_table_elements price_table_elements_with_shadow">
-                        <p class="price_name poppins--font text-capitalize">professional</p>
-                        <p class="price_price poppins--font color--blue">$150</p>
-                        <p class="price_month poppins--font text-capitalize">monthly</p>
-                        <ul class="price_table_description">
-                            <li>10 GB file storage</li>
-                            <li>10 Workspaces</li>
-                            <li>Enhanced Security</li>
-                            <li>20 Projects per month</li>
-                            <li>Premium support</li>
-                        </ul>
-                        <div class="fill_sign_up_button poppins--font">
-                            <button class="color--white background_color--green text-uppercase">sign up now</button>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="yearly-tab">
+                    <div class="price_table d-flex text-center flex-wrap">
+                        <div class="col-lg-4 col-md-4 col-12">  
+                            <div class="price_table_elements">
+                                <p class="price_name poppins--font text-capitalize">starter</p>
+                                <p class="price_price poppins--font color--blue">$50</p>
+                                <p class="price_month poppins--font text-capitalize">yearly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button">
+                                    <button class="color--white background_color--blue text-uppercase">sign up now</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="price_table_elements">
-                        <p class="price_name poppins--font text-capitalize">perimum</p>
-                        <p class="price_price poppins--font color--blue">$250</p>
-                        <p class="price_month poppins--font text-capitalize">monthly</p>
-                        <ul class="price_table_description">
-                            <li>10 GB file storage</li>
-                            <li>10 Workspaces</li>
-                            <li>Enhanced Security</li>
-                            <li>20 Projects per month</li>
-                            <li>Premium support</li>
-                        </ul>
-                        <div class="fill_sign_up_button">
-                            <button class="color--white background_color--blue text-uppercase">sign up now</button>
+                        <div class="col-lg-4 col-md-4 col-12">  
+                            <div class="price_table_elements price_table_elements_with_shadow">
+                                <p class="price_name poppins--font text-capitalize">professional</p>
+                                <p class="price_price poppins--font color--blue">$150</p>
+                                <p class="price_month poppins--font text-capitalize">yearly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button poppins--font">
+                                    <button class="color--white background_color--green text-uppercase">sign up now</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="price_table_elements">
+                                <p class="price_name poppins--font text-capitalize">perimum</p>
+                                <p class="price_price poppins--font color--blue">$250</p>
+                                <p class="price_month poppins--font text-capitalize">yearly</p>
+                                <ul class="price_table_description">
+                                    <li>10 GB file storage</li>
+                                    <li>10 Workspaces</li>
+                                    <li>Enhanced Security</li>
+                                    <li>20 Projects per month</li>
+                                    <li>Premium support</li>
+                                </ul>
+                                <div class="fill_sign_up_button">
+                                    <button class="color--white background_color--blue text-uppercase">sign up now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
             </div>
         </div>

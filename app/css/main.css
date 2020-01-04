@@ -116,8 +116,8 @@ button {
   padding-bottom: 80px;
   font-size: 24px;
   line-height: 2; }
-  .fill_buttons button {
-    padding: 6px 55px;
+  .fill_buttons a {
+    padding: 14px 55px;
     box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1); }
   .fill_buttons_month {
     border-radius: 30px 0 0 30px;
@@ -759,7 +759,11 @@ p {
 .video {
   position: relative;
   padding: 0;
-  display: flex; }
+  display: flex;
+  width: 45%;
+  margin-left: 116px; }
+  .video_left {
+    width: 45%; }
   .video_section {
     padding: 0 15px;
     background-color: #fbfbfb; }
@@ -777,7 +781,7 @@ p {
     width: 72px;
     height: 72px; }
   .video_left_side {
-    padding: 130px 0; }
+    padding: 130px 15px; }
 
 .play_button_shadow {
   border-radius: 50%;
@@ -804,6 +808,11 @@ p {
     padding-bottom: 80px; }
   .screenshots_header_paragraph {
     padding-top: 30px; }
+
+.slider_indicator li {
+  width: 40px;
+  height: 7px;
+  border-radius: 10px; }
 
 .green_section {
   background: url(/app/images/green_section_background.png) no-repeat center;
@@ -842,7 +851,9 @@ p {
   .feedback_paragraph {
     padding-top: 30px; }
   .feedback_list {
-    padding-top: 73px; }
+    padding-top: 73px;
+    padding-bottom: 68px;
+    margin-bottom: 26px; }
     .feedback_list_item {
       box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
       padding: 47px 27px; }
@@ -894,6 +905,22 @@ p {
   color: #575757;
   line-height: 2.267;
   font-weight: 500; }
+
+.nav-tabs {
+  border: none;
+  justify-content: center; }
+
+.first_indicator {
+  margin-bottom: -50px; }
+
+.slider_indicator li {
+  background-color: #ebe9ff;
+  cursor: pointer; }
+
+.slider_indicator .active {
+  background-color: #00cff1;
+  width: 60px;
+  height: 7px; }
 
 .advertisement {
   background-image: url(/app/images/advertisement_background.png) no-repeat center;
@@ -1017,6 +1044,8 @@ p {
 @media (max-width: 991px) {
   .ad_images {
     display: none; }
+  .green_section_content::after {
+    display: none; }
   .ad_second_image {
     transform: translate(24%, 18%); }
   .price_table_elements {
@@ -1050,7 +1079,13 @@ p {
     justify-content: center; }
   .name_and_email > div {
     margin-bottom: 15px;
-    padding: 0; } }
+    padding: 0; }
+  .video {
+    display: none; }
+  .video_left {
+    width: 100%; }
+  .video_left_side {
+    padding: 30px 0; } }
 
 @media (max-width: 767px) {
   footer {
