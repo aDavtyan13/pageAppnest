@@ -1,12 +1,15 @@
+$color-blue: #00cff1;
+$color-white: #fff;
+
 .color {
-    &--blue {
+    &--blue{
         color: #00cff1;
     }
-    &--white {
+    &--white{
         color: #fff;
     }
     &--black {
-        color: rgb(0, 0, 0);
+        color: #000;
     }
     &--green {
         color: #24c657;
